@@ -1,4 +1,3 @@
-
 <h2>GitHub Address Book</h2>
 
 <form ng-submit='repos.lookup(repos.user.login)'>
@@ -9,7 +8,9 @@
 <section class='gh-repos'>
     <ul>
         <li ng-repeat='repo in repos.list | bypopularity'>
+
             <section class='gh-repo'>{{repo.name}}</section>
+            <section panel></section>
         </li>
     </ul>
 </section>

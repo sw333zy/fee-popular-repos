@@ -5,6 +5,7 @@
         .config(ghConfig);
 
     ghConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+
     function ghConfig($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
 
